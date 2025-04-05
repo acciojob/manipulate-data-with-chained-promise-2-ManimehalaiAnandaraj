@@ -13,16 +13,18 @@ function manipulateArray() {
 		setTimeout(()=>{
 			resolve(filteredArray);
 		},1000)
-	})
+	});
 })
-.then( filteredArray =>{
-	return new Promise(resolve =>{
+.then( filteredArray => {
+	return new Promise(resolve => {
 		const multipliedArray=filteredArray.map(num => num * 2);
 		const output=document.getElementById('output');
-		setTimeout(()=>{
-			output.textContent=JSON.stringify(multipliedArray); 
+		setTimeout(() => {
+			output.textContent = JSON.stringify(multipliedArray); 
 			resolve(multipliedArray);
 		},2000)
-	})
-})
+	});
+});
 }
+
+manipulateArray([1,2,3,4]);
