@@ -1,5 +1,5 @@
 //your JS code here. If required.
-function manipulateArray() {
+function manipulateArray(array) {
 	return new Promise(resolve => {
 		setTimeout(() =>{
 			resolve(array);		
