@@ -2,7 +2,7 @@
 function manipulateArray() {
 	return new Promise(resolve => {
 		setTimeout(() =>{
-			resolve([1,2,3,4]);		
+			resolve(array);		
 			},3000);
 	})
 	.then(array =>{
